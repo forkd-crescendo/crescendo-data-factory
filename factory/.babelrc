@@ -1,0 +1,15 @@
+{
+  "presets": ["es2015"],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "dynamic-import-node",
+    "transform-object-rest-spread",
+    [
+      "transform-runtime",
+      {
+        "polyfill": false,
+        "regenerator": true
+      }
+    ]
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "crescendo-factory",
+  "version": "1.0.0",
+  "description": "create a bunch of fake artistic data",
+  "main": "index.js",
+  "scripts": {
+    "generate": "cross-var babel index.js | node",
+    "fetchMusic": "cross-var babel fetchMusicVideos.js | node",
+    "migrate": "cross-var babel migrate.js | node",
+    "runUpdate": "cross-var babel $UPDATE | node",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Jara",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-dynamic-import-node": "^1.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-var": "^1.1.0",
+    "glob": "^7.1.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "dotenv": "^5.0.1",
+    "faker": "^4.1.0"
+  }
+}
